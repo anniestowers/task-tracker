@@ -1,0 +1,7 @@
+<h1>Home</h1>
+<%= link_to 'About', about_path %>
+<% if user_signed_in? %>
+  <br />
+  <%= link_to 'View Tasks', tasks_path %>
+  <%= link_to 'Edit User Profile', edit_user_registration_path %>
+<% end  %>
